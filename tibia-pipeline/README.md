@@ -92,3 +92,5 @@ gcloud run jobs execute tibia-aggregate --region=europe-west2
 ## 📌 Notes
 
 This is part of my GCP learning journey and focuses on hands-on, real-world cloud patterns rather than theory.
+
+The pipeline tracks Ulmyra, the world formed by the merger of Sonira and Bravoria.

@@ -3,7 +3,7 @@ set -euo pipefail
 # poprawny timestamp (ISO-like)
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
-PLAYERS=$(curl -s https://api.tibiadata.com/v4/world/Sonira | jq '.world.players_online')
+PLAYERS=$(curl --fail --silent --show-error https://api.tibiadata.com/v5/world/Ulmyra | jq --exit-status --raw-output '.world.players_online | numbers')
 
 FILENAME="players_${TIMESTAMP}.txt"
 
